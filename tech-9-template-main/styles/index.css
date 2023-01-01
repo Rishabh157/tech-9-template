@@ -7,11 +7,6 @@
 }
 
 /* top nav-bar start */
-/* .main-header {
-    height: 108vh;
-    background-color: #1c1f52;
-} */
-
 .top-nav-background {
     background-image: linear-gradient(0deg, #EBEDDE 0%, #f8f7f6 50%, #dbdbd7 180%);
 }
@@ -31,20 +26,31 @@
     font-size: 17px;
 }
 
+.nav-bar li {
+    font-size: 17px;
+    transition: all 450ms;
+}
+
+.nav-bar li:hover {
+    font-size: 17px;
+    background-color: #051C82;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
 .nav-bar li a {
     text-decoration: none;
     color: #000;
     font-weight: 500;
-    transition: all 450ms;
+    transition: all 150ms;
 }
-
 
 .nav-bar li a:hover {
-    background-color: #051C82;
-    padding: 10px;
     color: #fff;
-    border-radius: 10px;
 }
+
 
 /* .portfolio-btn {
     background-color: #91b8e1;
@@ -57,7 +63,6 @@
     position: absolute;
     display: none;
     background-image: linear-gradient(0deg, #EBEDDE 0%, #f8f7f6 50%, #dbdbd7 180%);
-    padding: 10px 0px 10px 0px;
     width: 350%;
     border: 1px solid #cecece;
     border-radius: 2px;
@@ -68,20 +73,15 @@
     color: #fff;
     font-weight: 600;
     padding-bottom: 10px;
-    padding: 0px 20px 10px 20px;
-    border-bottom: 1px solid #cecece;
-    transition: all 450ms;
+    padding: 10px 20px 10px 20px;
+    /* border-bottom: 1px solid #cecece; */
+    transition: all 0.s;
 }
 
 
 .panel p:hover {
     background-color: #051C82;
-}
-
-.panel p a :hover {
     color: #fff;
-    padding: 0px;
-    background-color: #3889c6;
 }
 
 .selectebale {
@@ -127,18 +127,18 @@
     .nav-bar {
         position: fixed;
         flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        background-color: #000000;
+        width: 50%;
+        height: 50vh;
+        background-color: #1C1F52;
         top: 72px;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all .3s;
     }
 
 
     #check:checked~.nav-bar {
-        left: 0;
+        right: 0;
     }
 
 
@@ -161,8 +161,11 @@
 
     .panel {
         background-image: none;
-        background-color: #000;
-        padding: 10px 50px
+        /* background-color: #000; */
+        background-color: #1C1F52;
+        padding: 10px 0px;
+        position: absolute;
+        right: 50px;
     }
 }
 
@@ -1039,11 +1042,11 @@
 .website-container {
     background-color: #0960bd;
     height: 100vh;
-    padding: 100px 0px;
+    padding: 0px 50px;
 }
 
 .web-main-right img {
-    height: 350px;
+    /* height: 350px; */
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
@@ -1094,20 +1097,12 @@
 
 @media only screen and (max-width:576px) {
     .website-container {
-        padding: 60px 0px;
-    }
-
-    .website-container {
-        height: 50vh;
-        padding: 40px 0px;
-    }
-
-    .web-main-left {
-        margin-bottom: 20px;
+        height: 60vh;
+        padding: 0px 20px;
     }
 
     .web-main-right img {
-        height: 30vh;
+        height: 25vh;
     }
 
     .devlopment-left {
